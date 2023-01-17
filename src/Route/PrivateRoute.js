@@ -8,7 +8,7 @@ export const privateRoute = [
   {
     path: "/dashboard",
     element: <AdminPage />,
-    role: "all",
+    role: "admin",
   },
   {
     path: "manager",

@@ -1,20 +1,17 @@
 import { useEffect, useState } from "react";
 import { getRoute } from "./Route";
+import Router from "./Route/Router";
+import { publicRoutes } from "./Route/PublicRoute";
 
 function App() {
-  const [allRoute, setAllRoute] = useState([]);
+  const [allRoute, setAllRoute] = useState([...publicRoutes]);
   useEffect(() => {
     const route = getRoute();
-    console.log(route, "from app");
+    setAllRoute([...allRoute, route]);
   }, []);
+  console.log(allRoute, "from app js");
 
-  return (
-    <>
-      <h2 className="text-center text-3xl font-bold text-cyan-400">
-        Mahfuz Antor
-      </h2>
-    </>
-  );
+  return <Router allRoute={allRoute} />;
 }
 
 export default App;
