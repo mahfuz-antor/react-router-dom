@@ -33,6 +33,6 @@ export const privateRoute = [
   {
     path: "payment",
     element: <Payment />,
-    role: "payment",
+    role: "admin",
   },
 ];
