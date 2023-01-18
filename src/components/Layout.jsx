@@ -35,7 +35,9 @@ const Layout = () => {
         </ul>
       </div>
       <div className="bg-slate-200 min-h-screen">
-        <h2>content part here: video-1:03 min</h2>
+        <div className="ml-64 pt-70 pl-4">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
