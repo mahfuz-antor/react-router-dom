@@ -3,7 +3,9 @@ import React from "react";
 const AdminPage = () => {
   return (
     <>
-      <h2>Admin Page here.</h2>
+      <div>
+        <h2 className="text-red-400 text-3xl">Admin Page here.</h2>
+      </div>
     </>
   );
 };

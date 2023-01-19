@@ -4,9 +4,8 @@ import { user } from "./Utils";
 import { Navigate } from "react-router-dom";
 
 const ProtectRoute = ({ r, children }) => {
-  console.log(user, "from index user");
   if (user) {
-    if (r.role === user.role) {
+    if (r.role === user.role || r.role === "all") {
       return children;
     } else {
       return <Navigate to={"/not-access"} />;

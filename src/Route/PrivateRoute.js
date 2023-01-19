@@ -3,12 +3,14 @@ import Manager from "../components/Manager";
 import Seller from "../components/Seller";
 import Worker from "../components/Worker";
 import Payment from "../components/Payment";
+import { Navigate } from "react-router-dom";
+import { getPath } from "./Utils";
 
 export const privateRoute = [
   {
     path: "/dashboard",
-    element: <AdminPage />,
-    role: "admin",
+    element: <Navigate replace to={getPath()} />,
+    role: "all",
   },
   {
     path: "manager",

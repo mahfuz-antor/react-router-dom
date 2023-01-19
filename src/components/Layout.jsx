@@ -35,7 +35,7 @@ const Layout = () => {
         </ul>
       </div>
       <div className="bg-slate-200 min-h-screen">
-        <div className="ml-64 pt-70 pl-4">
+        <div className="ml-64 pt-20 pl-4">
           <Outlet />
         </div>
       </div>
