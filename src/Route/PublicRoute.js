@@ -7,6 +7,12 @@ export const publicRoutes = [
   {
     path: "",
     element: <Home />,
+    children: [
+      {
+        path: "/addProduct",
+        element: <AddProduct />,
+      },
+    ],
   },
 
   {
